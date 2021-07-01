@@ -13,7 +13,7 @@ jobs:
           node -v
           npm -v
           pip -V
-  run-phython:
+  run-python:
     runs-on: ubuntu-latest
     needs: ['run-shell-command']
     steps:
