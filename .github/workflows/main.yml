@@ -13,3 +13,11 @@ jobs:
           node -v
           npm -v
           pip -V
+  run-phython:
+    runs-on: ubuntu-latest
+    steps:
+      - name: show python output
+        run: |
+          import platform
+          print (platform.processor())
+          shell: python
