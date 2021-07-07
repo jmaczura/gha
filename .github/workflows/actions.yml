@@ -1,0 +1,14 @@
+name: Actions Workflow
+
+on: [push]
+
+jobs:
+  run-hello-world:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Simple JS Action
+        id: greeting
+        uses: actions/hello-world-javascript-action@v1.1
+        with:
+          who-to-greet: Jason
+  
